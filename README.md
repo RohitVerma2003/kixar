@@ -1,50 +1,66 @@
-# Welcome to your Expo app 👋
+# 🏏 Venue Booking App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A React Native mobile application built using Expo that allows users to book cricket courts by selecting a date, time slot, court, number of players, and calculates the total cost. The booking is saved in AsyncStorage, and the home screen shows the latest booking with a clean, modern UI.
 
-## Get started
+## 🚀 Setup Instructions
 
-1. Install dependencies
-
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+1. Clone the repository
 
 ```bash
-npm run reset-project
+git clone https://github.com/RohitVerma2003/kixar
+cd kixar
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. Install dependencies
 
-## Learn more
+```bash
+npm install
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+3. Install required Expo dependencies
+```bash
+expo install react-native-vector-icons
+expo install @react-native-async-storage/async-storage
+expo install react-native-safe-area-context
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+4. Start the development server
+```bash
+npx expo start
+```
 
-## Join the community
+---
 
-Join our community of developers creating universal apps.
+## 🧠 Assumptions
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- The following assumptions were made while building this project:
+- Only one booking is stored at a time (latest booking overwrites the previous one).
+- Users can only select future dates from today to month-end.
+- Time slots are assumed to be 1-hour blocks based on the period (morning, noon, evening, night).
+- Each player has a fixed cost of ₹240.
+- There are only two courts available (Court A & Court B).
+- The app does not use a backend yet — all data is stored locally using AsyncStorage.
+- Expo Router is used for navigation.
+
+## Image
+<p align="center">
+   <img src="https://github.com/user-attachments/assets/b04cb0f6-c7b6-4b96-afd3-27132917f886" width="32%"/>   
+   <img src="https://github.com/user-attachments/assets/f3474d28-c626-468b-9841-8e0c2878971e" width="32%"/>   
+   <img src="https://github.com/user-attachments/assets/9c97e1ba-dd4b-4279-a903-c3a86b34df28" width="32%"/>   
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
